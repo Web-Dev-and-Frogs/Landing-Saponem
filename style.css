@@ -1,0 +1,74 @@
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-x: hidden;
+	position: relative;
+
+	background-color: #FDFCFA;
+
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	line-height: 1.6;
+	color: #295F58;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	max-width: 1430px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Course progress */
+.course-progress {
+	padding: 52px 0;
+
+	background-color: #DAF1EF;
+}
+
+.panels-row {
+	display: flex;
+	gap: 52px;
+}
+
+.panel {
+	height: 653px;
+	flex-grow: 1;
+}
+
+.panel__cover {
+	height: 100%;
+	width: 100%;
+	background: lightgray url(assets/1week.jpg) no-repeat;
+	background-size: cover;
+}
+.panel:nth-child(2) .panel__cover {
+	background-image: url(assets/2week.jpg);
+}
+.panel:nth-child(3) .panel__cover {
+	background-image: url(assets/3week.jpg);
+}
+
