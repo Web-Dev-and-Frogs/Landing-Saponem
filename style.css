@@ -102,6 +102,7 @@ img {
 
 a {
 	display: inline-block;
+
 	text-decoration: none;
 	color: #000000;
 }
@@ -127,28 +128,73 @@ li {
 
 .panels-row {
 	display: flex;
-	gap: 52px;
+	justify-content: space-between;
 }
 
 .panel {
+	position: relative;
 	height: 653px;
-	flex-grow: 1;
+	flex-basis: 440px;
+	overflow: hidden;
 }
 
 .panel__cover {
+	position: relative;
+	z-index: 10;
 	height: 100%;
 	width: 100%;
+	max-width: 440px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	background: lightgray url(assets/1week.jpg) no-repeat;
 	background-size: cover;
 }
+.panel__cover::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 46px;
+
+	background: rgba(253, 252, 250, 0.50);
+}
+
 .panel:nth-child(2) .panel__cover {
 	background-image: url(assets/2week.jpg);
 }
+
 .panel:nth-child(3) .panel__cover {
 	background-image: url(assets/3week.jpg);
 }
 
+.panel__title {
+	z-index: 11;
 
+	font-family: 'Comforter', cursive;
+	color: #1B322F;
+	font-size: 150px;
+	letter-spacing: 1.5px;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.panel__text-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 710px;
+	padding: 72px 32px;
+
+	background: #A9C0BD;
+}
+
+.panel__text {
+	font-size: 22px;
+	color: #000000;
+}
 /* ingredients */
 
 .ingredients{
