@@ -72,7 +72,7 @@ header {
 }
 .promo-text-color{
 	color: #8C648A;
-}	
+}
 
 /* Global */
 *,
@@ -147,9 +147,10 @@ li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 
 	background: lightgray url(assets/1week.jpg) no-repeat;
-	background-size: cover;
+	background-size: auto 100%;
 }
 .panel__cover::after {
 	content: "";
@@ -178,6 +179,11 @@ li {
 	letter-spacing: 1.5px;
 	line-height: 1;
 	white-space: nowrap;
+}
+
+.panel__title span {
+	display: inline-block;
+	white-space: pre;
 }
 
 .panel__text-container {
@@ -257,7 +263,7 @@ li {
 .application button{
 	padding: 20px;
 	width: 50%;
-	border: 8px solid #DAF1EF; 
+	border: 8px solid #DAF1EF;
 	background: none;
 	color: #295F58;
 	margin-left: 220px;
