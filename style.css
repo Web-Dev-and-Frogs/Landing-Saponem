@@ -201,8 +201,20 @@ li {
 	font-size: 22px;
 	color: #000000;
 }
-/* ingredients */
 
+.panel__overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	background: #000000;
+	opacity: 0;
+}
+
+
+/* ingredients */
 .ingredients{
 	background-color:#EFD2ED;
 }
