@@ -225,7 +225,6 @@ function flower6() {
 
 gsap.timeline({
 	scrollTrigger: {
-		markers: true,
 		pinnedContainer: '.wrapper',
 		trigger: '.footer-animation',
 		start: '25% bottom',
