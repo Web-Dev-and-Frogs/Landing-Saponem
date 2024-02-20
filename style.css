@@ -184,7 +184,7 @@ li {
 	overflow: hidden;
 
 	background: lightgray url(assets/1week.jpg) no-repeat;
-	background-size: auto 100%;
+	background-size: cover;
 }
 .panel__cover::after {
 	content: "";
@@ -270,7 +270,52 @@ li {
 
 /* application */
 .application{
-	margin:0 525px;
+	position: relative;
+}
+
+.application .container {
+	padding-bottom: 133px;
+	position: relative;
+	z-index: 10;
+}
+
+.footer-animation {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 55%;
+	overflow: hidden;
+}
+
+.footer-animation svg {
+	position: absolute;
+	bottom: -10px;
+}
+
+#flower1 {
+	left: 3%;
+}
+
+#flower2 {
+	left: 9%;
+}
+
+#flower3 {
+	left: 24%;
+}
+
+#flower4 {
+	right: 21%;
+}
+
+#flower5 {
+	right: 16%;
+}
+
+#flower6 {
+	right: 3%;
 }
 
 .application h2 {
@@ -310,7 +355,7 @@ li {
 	padding: 20px;
 	width: 50%;
 	border: 8px solid #DAF1EF;
-	background: none;
+	background: #FDFCFA;
 	color: #295F58;
 	margin-left: 220px;
 	font-size: 32px;
