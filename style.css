@@ -47,7 +47,11 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 110px 254px 0 ;
+	padding-top: 110px; 
+	max-width: 1430px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .menu-list{
@@ -65,19 +69,29 @@ header {
 	font-size: 56px;
 }
 
-
 /* promo */
 .promo{
 	background-image: url(./img/banner.png);
 	background-repeat: no-repeat;
-	margin-left: 150px;
+	max-width: 1980px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
+
+.content{
+	max-width: 1430px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .promo h1{
 	font-family: Roboto Mono;
 	font-size: 127px;
 	text-transform: uppercase;
-	padding-left: 203px;
 	padding-top: 147px;
 	background-image: url(./img/bg.png);
 	background-clip: text;
