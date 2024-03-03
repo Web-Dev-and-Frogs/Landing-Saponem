@@ -1,3 +1,113 @@
+/* loader */
+.loader {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	background-color: #FDFCFA;
+}
+
+.loader.visible {
+	display: block;
+}
+
+.loader__spinner {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: 50% 50%;
+	translate: -50% -50%;
+	animation: loader-spinner 2s infinite;
+}
+
+@keyframes loader-spinner {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+/* header */
+header {
+	background-image: url(./img/logo\ \(1\).png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: auto;
+	height: 200px;
+}
+
+.menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 110px 254px 0 ;
+}
+
+.menu-list{
+	margin-right: 92px;
+	white-space: nowrap;
+}
+
+.menu li:last-child{
+	margin-left: 704px;
+	margin-right: 0;
+}
+
+.menu-list a {
+	font-family: Comforter;
+	font-size: 56px;
+}
+
+
+/* promo */
+.promo{
+	background-image: url(./img/banner.png);
+	background-repeat: no-repeat;
+	margin-left: 150px;
+}
+
+.promo h1{
+	font-family: Roboto Mono;
+	font-size: 127px;
+	text-transform: uppercase;
+	padding-left: 203px;
+	padding-top: 147px;
+	background-image: url(./img/bg.png);
+	background-clip: text;
+	-webkit-background-clip: text;
+	line-height: 140%;
+}
+
+.text{
+	background-image: url(./img/bg.png);
+	color: rgb(0 0 0 / 0%);
+	animation: scroll 90s linear infinite;
+}
+
+
+@keyframes scroll {
+	100% {
+	  background-position: 0px 400%;
+	}
+  }
+
+.promo-text{
+	font-family: Roboto Mono;
+	font-size: 26px;
+	margin-top: 139px;
+	margin-left: 85px;
+}
+.promo-text-color{
+	color: #8C648A;
+}
+
 /* Global */
 *,
 *::before,
@@ -331,7 +441,7 @@ header {
 	overflow: hidden;
 
 	background: lightgray url(assets/1week.jpg) no-repeat;
-	background-size: auto 100%;
+	background-size: cover;
 }
 .panel__cover::after {
 	content: "";
@@ -421,6 +531,52 @@ header {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+}
+
+.application .container {
+	padding-bottom: 133px;
+	position: relative;
+	z-index: 10;
+}
+
+.footer-animation {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 55%;
+	overflow: hidden;
+}
+
+.footer-animation svg {
+	position: absolute;
+	bottom: -10px;
+}
+
+#flower1 {
+	left: 3%;
+}
+
+#flower2 {
+	left: 9%;
+}
+
+#flower3 {
+	left: 24%;
+}
+
+#flower4 {
+	right: 21%;
+}
+
+#flower5 {
+	right: 16%;
+}
+
+#flower6 {
+	right: 3%;
 }
 
 .application h2 {
@@ -467,7 +623,7 @@ header {
 	padding: 20px;
 	width: 50%;
 	border: 8px solid #DAF1EF;
-	background: none;
+	background: #FDFCFA;
 	color: #295F58;
 	font-size: 32px;
 	margin: 0 auto;
